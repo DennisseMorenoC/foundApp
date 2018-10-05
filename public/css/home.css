@@ -46,6 +46,9 @@ h1 {
   font-weight: 700;
   border-bottom: 2px solid #f1d337;
 }
+#registerBtn{
+  color: #202020;
+}
 
 /* Information */
 

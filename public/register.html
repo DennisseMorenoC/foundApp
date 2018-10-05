@@ -31,7 +31,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h4>¿A quién o qué encontraste?</h4>
+          <h4 id="tituloQue">¿A quién o qué encontraste?</h4>
           <div class="options-container">
             <button id="personOption" class="btn selected-option" onclick="showPersonForm()">Una Persona <span><i class="fas fa-user"></i></span></button>
             <button id="objectOption" class="btn selected-option" onclick="showObjectForm()">Un Objeto <span><i class="fas fa-box-open"></i></span></button>
@@ -103,7 +103,7 @@
                   <textarea class="form-control" id="extraInfo" rows="2" placeholder="Vestimenta, cicatrices, tatuajes, etc." required=""></textarea>
                 </div>
                 <!-- Datos de Contacto -->
-                <p>Información de Contacto</p>
+                <p id="infoContacto">Información de Contacto</p>
                 <div class="form-group">
                   <label for="personfinder">Nombre</label>
                   <input type="text" class="form-control" id="personFinder" placeholder="Juan Pérez" required>
@@ -118,7 +118,7 @@
                 <!-- Foto -->
                 <div id="personCameraIcon" class="cam-icon">
                   <label for="personPhoto">
-                    <span>Adjuntar fotografía de la persona</span><i class="fas fa-camera"></i>
+                    <span>Adjuntar fotografía de la persona</span><br><i class="fas fa-camera fa-2x"></i>
                     <input id="personPhoto" name="photo" accept="image/*" type="file" capture="camera">
                     <p id="personPhotoMessage"></p>
                   </label>
@@ -149,7 +149,7 @@
                 <textarea class="form-control" id="objectInfo" rows="3" placeholder="Realiza una descripción..." required></textarea>
               </div>
               <!-- Datos de Contacto -->
-              <p>Información de Contacto</p>
+              <p id="infoContacto" >Información de Contacto</p>
                 <div class="form-group">
                   <label for="objectFinder">Nombre</label>
                   <input type="text" class="form-control" id="objectFinder" placeholder="Juan Pérez" required>
@@ -164,7 +164,7 @@
               <!-- Foto -->
               <div id="oCameraIcon" class="cam-icon">
                 <label for="objectPhoto">
-                  <span>Adjuntar fotografía del objeto</span><i class="fas fa-camera"></i>
+                  <span>Adjuntar fotografía del objeto</span><br><i class="fas fa-camera"></i>
                   <input id="objectPhoto" name="photo" accept="image/*" type="file" capture="camera">
                   <p id="objectPhotoMessage"></p>
                 </label>
